@@ -1,0 +1,38 @@
+<div "class=container" ng-controller="phoneBookCtrl">
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">           
+                <div class="panel-title">
+					<h3 class="text-center">Add Contact</h3>                                
+                </div>      
+            </div>
+			<div class="panel-body">
+				<form>
+					<div class="form-group">
+						<label for="name">Add Name:</label>
+						<input type="text" class="form-control" id="name" ng-model="currentContact.name" placeholder="Enter name">
+					</div>
+					<div class="form-group">
+						<label for="phone">Add Phone:</label>
+						<input type="tel" class="form-control" id="phone" ng-model="currentContact.phone" placeholder="Enter phone no.">
+					</div>
+					<div class="form-group">
+						<label for="email">Add Email:</label>
+						<input type="email" class="form-control" id="email" ng-model="currentContact.email" placeholder="Enter email">
+					</div>					
+					<div class="form-group">
+						<label for="birth-date">Add Birth Date:</label>
+						<input type="text" class="form-control" id="birthday" ng-model="currentContact.birthday">
+					</div>			
+					<div class="form-group">
+						<label for="name">Add Avatar:</label>
+						<input type="url" class="form-control" id="avatar" ng-model="currentContact.avatar" placeholder="Enter avatar">
+					</div>	
+					<a ng-href="#!/phone-book">
+						<button type="button" class="btn-primary" ng-click="addContact(currentContact)">Done</button>	
+					</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

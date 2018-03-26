@@ -1,0 +1,48 @@
+<div ng-controller="phoneBookCtrl">
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">           
+                <div class="panel-title">
+					<h3 class="text-center">Phone Book</h3>                                
+                </div>      
+            </div>
+			<div class="panel-body">
+				<form class="form-horizontal">
+					<div class="form-group has-info has-feedback">
+						<label for="seacrh" class="col-sm-2 control-label">Search: </label>
+						<div class="col-sm-5">
+							<input type="text"  name="search" ng-model ="test" class="form-control">
+							<span class="glyphicon glyphicon-search form-control-feedback"></span>                                            
+						</div>
+						<div class="col-sm-5">
+							<a ng-href="#!/addContact/null">
+								<button type="button" class="btn-primary btn-md">Add New</button>
+							</a>
+						</div>
+					</div>
+				</form> 
+				<div class="table-responsive">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Contacts</th>
+								<th>Phone Number</th>
+                                <th>View Details</th>								
+							</tr>
+						</thead>
+						<tbody>		
+							<tr ng-repeat="contact in jsonData.contacts|orderBy: 'name'">
+								<td><span ng-hide="showMe($index)">{{contact.name}}</span><input text="text"class="form-control input-sm" ng-model="contact.name" ng-show="showMe($index)"></td>
+								<td><span ng-hide="showMe($index)">{{contact.phone}}</span><input text="text" class="form-control input-sm" ng-model="contact.phone" ng-show="showMe($index)"></td>	
+                                <td><a ng-href="#!/viewContact/{{contact.id}}">
+										<button type="button" class="btn-primary">view</button>
+									</a>
+								</td>							
+							</tr>
+						</tbody>
+					</table>
+				</div>								
+			</div>
+		</div>
+	</div>
+ </div>

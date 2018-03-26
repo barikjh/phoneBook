@@ -1,0 +1,24 @@
+{
+  "name": "angular-mock-back",
+  "version": "0.1.2",
+  "authors": [
+    "Gabriel Obregon <gabo.obregon@gmail.com>"
+  ],
+  "main": "./angular-mock-back.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gah-boh/bower-angular-mock-back.git"
+  },
+  "license": "MIT",
+  "ignore": [],
+  "homepage": "https://github.com/gah-boh/bower-angular-mock-back",
+  "_release": "0.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.2",
+    "commit": "ab68385cb13e3c8c5e1cd64fe5305ba9d6e7d5d1"
+  },
+  "_source": "https://github.com/gah-boh/bower-angular-mock-back.git",
+  "_target": "^0.1.2",
+  "_originalSource": "angular-mock-back"
+}

@@ -1,0 +1,25 @@
+<div "class=container" ng-controller="viewContactCtrl">
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">           
+                <div class="panel-title">
+					<h3 class="text-center">{{currentContact.name}}</h3> 										
+                </div>      
+            </div>
+			<div class="panel-body">
+				<div class="list-group-item">	
+					<p>phone: {{currentContact.phone}}</p>
+					<p>email: <a ng-href="{{currentContact.email}}">{{currentContact.email}}</a></p> 
+					<p>birthday: {{currentContact.birthday}}</p>	
+					<p>avatar: <a ng-href="{{currentContact.avatar}}">{{currentContact.avatar}}</a></p>
+				</div>
+			</div>
+			<div class="panel-footer">	
+				<a ng-href="#!/addContact/{{index}}">			
+					<button type="button" class="btn-primary btn-md">Edit</button>
+				</a>
+				<button type="button" class="btn-primary btn-md" ng-click="removeContact()">Remove</button>
+			</div>
+		</div>
+	</div>
+<div>
